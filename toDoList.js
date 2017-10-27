@@ -36,8 +36,11 @@ function createNewDiv(text) {
   }
   $(div).on("mouseenter", function () {
     $(image).toggle("slide");
+    // $('.task').css("height","-10px");
+$('.ui-effects-placeholder').css("display","none");
   });
   $(div).on("mouseleave", function () {
     $(image).toggle("slide");
+    $('.ui-effects-placeholder').css("display","none");
   });
 }
