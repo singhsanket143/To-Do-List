@@ -1,6 +1,9 @@
 body {
   background-image: linear-gradient(to right, #0ecaf4, #e5e1b7);
 }
+* {
+  font: Lato;
+}
 .mainMenu{
   width: 350px;
   margin-left: auto;
@@ -40,7 +43,7 @@ input {
   width: 336px;
   height: 26px;
   background-color: white;
-  color: #3163b2;
+  color: #3163ff;
   outline: 0px;
   border-width: 2px;
   border-style: solid;
@@ -53,7 +56,6 @@ input {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  background-color: white;
   max-height: 16px;
 }
 .sideBox {
@@ -64,6 +66,12 @@ input {
 }
 .task {
   height: 36px;
-  background-color: white;
   padding-left: 10px;
+  font: Lato;  
+}
+.greyBackground {
+  background-color: #dee4ed;
+}
+.whiteBackground {
+  background-color: white;
 }
