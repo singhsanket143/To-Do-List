@@ -3,14 +3,16 @@ $(".alignRight").click(function(){
 });
 $("input").focusin(function(){
   $('input').addClass("inputInFocus");
-  console.log("Input is in focus");
 });
 $("input").focusout(function(){
   $('input').removeClass("inputInFocus");
 });
-$(".oneToDo").mouseenter(function () {
-  $('.sideBox').toggle("slide");
+$('input').keypress(function (event) {
+  if(event.which === 13)
+    createNewDiv($('input').val());
 });
-$(".oneToDo").mouseleave(function () {
-  $('.sideBox').toggle('slide');
-});
+function createNewDiv(text) {
+  var divHtml = "<div class='oneToDo'><span class='sideBox'><i class='fa fa-trash' aria-hidden='true'></i></span><span class='task'>" + text + "</span></div>";
+  var div = $(divHtml);
+  $("#allToDos").append(div);
+}

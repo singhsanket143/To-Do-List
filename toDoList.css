@@ -47,9 +47,11 @@ input {
   border-color: #3163b2;
 }
 .oneToDo {
-  width: inherit;
+  width: 350px;
   height: 16px;
   padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 10px;
   background-color: white;
   max-height: 16px;
